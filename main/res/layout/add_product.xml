@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/e1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Product Id" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/e2"
+        android:layout_below="@+id/e1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentEnd="true"
+        android:hint="Product Name" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  QUANTISED  "
+        android:id="@+id/c1"
+        android:layout_below="@+id/e2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  WEIGHTED  "
+        android:id="@+id/c2"
+        android:layout_alignBottom="@+id/c1"
+        android:layout_alignParentEnd="true"
+        android:checked="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ee3"
+        android:layout_below="@+id/c1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:layout_alignEnd="@+id/c2"
+        android:hint="Price"
+        android:enabled="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ee4"
+        android:layout_below="@+id/ee3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentEnd="true"
+        android:hint="Quantity in stock"
+        android:enabled="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t1"
+        android:layout_alignBottom="@+id/ee3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/ee3"
+        android:gravity="center_vertical"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t2"
+        android:layout_alignBottom="@+id/ee4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/ee4"
+        android:gravity="center_vertical"
+        android:textSize="15sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/t7"
+        android:layout_below="@+id/ee4"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/c2"
+        android:minLines="3"
+        android:hint="Description"
+        android:gravity="top" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  OK  "
+        android:id="@+id/b1"
+        android:layout_below="@+id/t7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:minWidth="100dp"
+        android:textSize="20sp" />
+
+</RelativeLayout>
